@@ -1,0 +1,156 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+header.header {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #071952;
+    color: white;
+    border-bottom: 5px solid #071952;
+}
+
+header.header h1 {
+    font-size: 42px;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+header.header p {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+section {
+    margin: 50px 0;
+}
+.content1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.content1 img {
+    flex: 1;
+    max-width: 30%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.content img {
+    flex: 1;
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.text {
+    flex: 2;
+    padding: 20px;
+}
+
+section h2 {
+    font-size: 32px;
+    color: #088395;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+section h2::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: #088395;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+ul li {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+}
+
+ul li::before {
+    content: '\2022';
+    color: #088395;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .text {
+        padding: 0;
+    }
+
+    header.header h1 {
+        font-size: 32px;
+    }
+
+    header.header p {
+        font-size: 16px;
+    }
+
+    section h2 {
+        font-size: 26px;
+    }
+
+    section p,
+    ul li {
+        font-size: 16px;
+    }
+}
